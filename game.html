@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        /* Container for positioning the header elements */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        /* Position the "Press P to Pause" in the top-left corner */
+        h1#pause {
+            position: absolute;
+            top: 10px;  /* Distance from the top */
+            left: 10px; /* Distance from the left */
+            margin: 0;  /* Remove default margin */
+        }
+
+        /* Position the "Back to main page" in the top-right corner */
+        h1#mainPage {
+            position: absolute;
+            top: 10px;   /* Distance from the top */
+            right: 10px; /* Distance from the right */
+            margin: 0;   /* Remove default margin */
+        }
+
+        /* Make the link appear inline with text */
+        h1#mainPage a {
+            text-decoration: none;
+            color: inherit; /* Keep the text color the same as the h1 */
+        }
+
+        /* Canvas styling */
+        #gameCanvas {
+            background-color: #ffffff; /* White background for the canvas */
+            display: block;
+            border: 1px solid #000; /* Add a border to visualize the canvas */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="pause">Press P to Pause</h1>
+    <h1 id="mainPage">Back to main <a href="index.html">page</a></h1>
+    
+    <!-- Centered Canvas -->
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <script src="snake.js"></script>
+</body>
+</html>
+
+

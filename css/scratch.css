@@ -1,0 +1,15 @@
+.background{background-color: green;}
+
+.onpagemargin   {
+    position: fixed;
+    bottom: 0;
+    left: 737px;
+    width: 10%;
+    height: 50px;
+    background-color: burlywood;
+
+}
+.text   {
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+}
